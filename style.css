@@ -1,0 +1,177 @@
+/* sıfırlama işlemleri */
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root {
+    --ana-renk: rgb(38, 137, 145)
+    }
+     
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    header .title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      header .title h1 {
+        color: gray;
+      }
+      header .title h1 span {
+        color: var(--ana-renk);
+      }
+      header .title a {
+        font-size: 50px;
+        color: var(--ana-renk);
+      }
+      /*! yönlendirme işlemleri */
+      header nav ul {
+        display: flex;
+        gap: 20px;
+      }
+      header nav ul a {
+        text-decoration: none;
+        color: gray;
+      }
+      header nav ul a:hover {
+        color: var(--ana-renk);
+      }
+      header nav ul a i {
+        color: var(--ana-renk);
+      }
+      /*! yönlendirme işlemleri bitiş */
+    
+    /* Header bitiş */
+    
+    /* Section  başlangıç css */
+    
+    section {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 15px;
+    }
+    section .sec-left {
+        text-align: center;
+        flex: 1;
+    }
+    section .images {
+        flex: 1;
+        width: 300px;
+    }
+    section .sec-left h1 {
+        font-size: 35px;
+        color: gray;
+        margin-bottom: 25px;
+      }
+      section .sec-left h1 span {
+        color: var(--ana-renk);
+      }
+      section .sec-left p {
+        font-size: 16px;
+     }
+     section button {
+        padding: 5px 10px;
+        border: none;
+        background-color: var(--ana-renk);
+        color: white;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      section button:hover {
+        background-color: gray;
+        transition: 500ms;
+        scale: 0.9;
+      }
+      
+      /* Section  Bitiş css */
+    
+      /* course info css başlangıç */
+    .course-info {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(48, 137, 145, 0.55);
+        padding: 15px;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+      }
+      .p-sec,
+      .image-sec {
+        flex: 1;
+      }
+      .image-sec img {
+        width: 400px;
+      }
+      .course-info .p-sec h1 {
+        background-color: var(--ana-renk);
+        padding: 20px;
+        width: 60%;
+        position: absolute;
+        top: -20px;
+        border-bottom-right-radius: 60px;
+        color: white;
+      }
+      .course-info .p-sec p {
+        font-size: 17px;
+        color: white;
+      }
+      .course-info .p-sec button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--ana-renk);
+        color: white;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      /* course info css bitiş */
+    
+      /* Footer başlangıç */
+    footer {
+        padding: 20px;
+        margin-top: 100px;
+        border-top: 1px solid var(--ana-renk);
+      }
+      footer .footer-start {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+      
+        /* grid-template-columns: 1fr 1fr 1fr; */
+      }
+      footer .footer-start .footer-area {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      footer .footer-start .footer-area a {
+        text-decoration: none;
+        color: gray;
+      }
+      
+      footer .Bottom {
+        text-align: center;
+        margin-top: 50px;
+        border-top: 1px solid var(--ana-renk);
+        padding: 20px;
+      }
+    
+    
+    /* Footer Bitiş */
